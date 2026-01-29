@@ -145,8 +145,8 @@ const Dashboard = () => {
                         <div>
                             <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-4 hidden lg:block">Gestion</p>
                             <nav className="space-y-2">
-                                <SidebarItem icon={Package} label="Produits" />
-                                <SidebarItem icon={ShoppingCart} label="Ventes" />
+                                <SidebarItem icon={Package} label="Produits" onClick={() => navigate('/products')} />
+                                <SidebarItem icon={ShoppingCart} label="Caisse" onClick={() => navigate('/pos')} />
                                 <SidebarItem icon={Users} label="Clients" />
                             </nav>
                         </div>
